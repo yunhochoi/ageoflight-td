@@ -36,7 +36,7 @@ class LsystemExt:
 			
 			self.samples.append(instanceData)
 	
-		with open('json/instances.json', 'w') as outfile:
+		with open('json/lsystem.json', 'w') as outfile:
 			
 			json.dump(self.samples, outfile)
 		
