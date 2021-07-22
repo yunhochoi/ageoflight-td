@@ -17,8 +17,10 @@ class LsystemExt:
 		self.samples = None
 		self.rootDictionary = None
 		self.Generations = 0
-		self.GrowSpeed = 0.5
+		self.GrowSpeed = 1
 		self.GrowNormalize = 100
+		self.GrowRange = 4
+
 		self.Type = 'skel'
 
 
