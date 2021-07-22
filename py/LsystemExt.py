@@ -6,22 +6,43 @@ class LsystemExt:
 
 		# Operators
 		self.ownerComp = ownerComp
-		self.null_instance = ownerComp.op('null_instance')
-		self.geo_lsystem_1 = ownerComp.op('geo_lsystem_1')
-		self.geo_lsystem_2 = ownerComp.op('geo_lsystem_2')
-		self.geo_lsystem_3 = ownerComp.op('geo_lsystem_3')
-		self.geo_lsystem_4 = ownerComp.op('geo_lsystem_4')
-		self.instanceArray = [self.geo_lsystem_1, self.geo_lsystem_2, self.geo_lsystem_3, self.geo_lsystem_4]
+		self.null_instance = self.ownerComp.op('null_instance')
+		self.timer_grow_0 = self.ownerComp.op('base_grow/timer_grow_0')
+		self.timer_grow_1 = self.ownerComp.op('base_grow/timer_grow_1')
+		self.timer_grow_2 = self.ownerComp.op('base_grow/timer_grow_2')
+		self.timer_grow_3 = self.ownerComp.op('base_grow/timer_grow_3')
 
 		# attributes
 		self.samples = None
 		self.rootDictionary = None
-		self.Generations = 7
+		
+		self.numDan = 4
+		self.Generations = 0
+		self.GrowSpeed = 1
+		self.GrowNormalize = 50
+		self.GrowRange = 4
 		self.Type = 'tube'
 
 
-	def ExportJSON(self):
+	def InitLsystem(self):
 
+		self.ownerComp.op('base_grow/timer_grow_0').par.initialize.pulse()
+		self.ownerComp.op('base_grow/timer_grow_1').par.initialize.pulse()
+		self.ownerComp.op('base_grow/timer_grow_2').par.initialize.pulse()
+		self.ownerComp.op('base_grow/timer_grow_3').par.initialize.pulse()
+		# for dan in range(0, self.numDan-1):
+		# 	self.ownerComp.op('base_grow/timer_grow_{}'.format(dan)).par.initialize.pulse()
+			
+	
+	def StartGrowth(self):
+
+		self.ownerComp.op('base_grow/timer_grow_0').par.start.pulse()
+		self.ownerComp.op('base_grow/timer_grow_1').par.start.pulse()
+		self.ownerComp.op('base_grow/timer_grow_2').par.start.pulse()
+		self.ownerComp.op('base_grow/timer_grow_3').par.start.pulse()
+
+
+	def ExportJSON(self):
 
 		self.rootDictionary = {}
 		self.samples = []
