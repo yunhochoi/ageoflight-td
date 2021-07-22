@@ -30,9 +30,7 @@ class LsystemExt:
 		self.ownerComp.op('base_grow/timer_grow_1').par.initialize.pulse()
 		self.ownerComp.op('base_grow/timer_grow_2').par.initialize.pulse()
 		self.ownerComp.op('base_grow/timer_grow_3').par.initialize.pulse()
-		# for dan in range(0, self.numDan-1):
-		# 	self.ownerComp.op('base_grow/timer_grow_{}'.format(dan)).par.initialize.pulse()
-			
+
 	
 	def StartGrowth(self):
 
