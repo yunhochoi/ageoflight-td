@@ -4,6 +4,7 @@ class DataExt:
 	def __init__(self, ownerComp):
 		# Operators
 		self.ownerComp = ownerComp
+		self.lsystem = op.Lsystem
 		self.webclient_data = self.ownerComp.op('webclient_data')
 
 		# attributes:
@@ -11,8 +12,7 @@ class DataExt:
 		# Initializations
 		self.webclient_data.par.request.pulse()
 
-	def myFunction(self, v):
-		debug(v)
+	def OnRequest(self):
 
-	def PromotedFunction(self, v):
-		debug(v)
+		self.lsystem.StartGrowth()
+		
