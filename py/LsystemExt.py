@@ -16,8 +16,10 @@ class LsystemExt:
 		# attributes
 		self.samples = None
 		self.rootDictionary = None
-		self.Generations = 7
-		self.Type = 'tube'
+		self.Generations = 0
+		self.GrowSpeed = 0.5
+		self.GrowNormalize = 100
+		self.Type = 'skel'
 
 
 	def ExportJSON(self):
