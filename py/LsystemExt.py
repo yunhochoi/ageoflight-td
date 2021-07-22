@@ -19,20 +19,28 @@ class LsystemExt:
 		self.numDan = 4
 		self.Generations = 0
 		self.GrowSpeed = 1
-		self.GrowNormalize = 100
+		self.GrowNormalize = 50
 		self.GrowRange = 4
-		self.Type = 'skel'
+		self.Type = 'tube'
 
 
 	def InitLsystem(self):
-		for dan in range(0, self.numDan-1):
-			self.ownerComp.op('base_grow/timer_grow_{}'.format(dan)).par.initialize.pulse()
+
+		self.ownerComp.op('base_grow/timer_grow_0').par.initialize.pulse()
+		self.ownerComp.op('base_grow/timer_grow_1').par.initialize.pulse()
+		self.ownerComp.op('base_grow/timer_grow_2').par.initialize.pulse()
+		self.ownerComp.op('base_grow/timer_grow_3').par.initialize.pulse()
+		# for dan in range(0, self.numDan-1):
+		# 	self.ownerComp.op('base_grow/timer_grow_{}'.format(dan)).par.initialize.pulse()
 			
 	
 	def StartGrowth(self):
-		
-		for dan in range(0, self.numDan-1):
-			self.ownerComp.op('base_grow/timer_grow_{}'.format(dan)).par.start.pulse()
+
+		self.ownerComp.op('base_grow/timer_grow_0').par.start.pulse()
+		self.ownerComp.op('base_grow/timer_grow_1').par.start.pulse()
+		self.ownerComp.op('base_grow/timer_grow_2').par.start.pulse()
+		self.ownerComp.op('base_grow/timer_grow_3').par.start.pulse()
+
 
 	def ExportJSON(self):
 
