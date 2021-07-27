@@ -11,6 +11,7 @@ class TreeExt:
 		self.DanDistance = 4
 		self.DanOffsetRangePosition = 2
 		self.DanOffsetRangeHeight = 2
+		self.DanOffsetRangeGravity = 10
 		self.TruckHeight = 7
 		self.TruckPoint = 10
 
