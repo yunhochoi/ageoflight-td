@@ -7,7 +7,7 @@ class TreeExt:
 		self.geo_trees = self.ownerComp.op('geo_trees')
 
 		# attributes:
-		self.NumDan = 3
+		self.NumDan = 5
 		self.DanDistance = 4
 		self.DanOffsetRangePosition = 2
 		self.DanOffsetRangeHeight = 5
@@ -15,15 +15,33 @@ class TreeExt:
 		self.TruckHeight = 8
 		self.TruckPoint = 10
 
+	
 	def CreateTrees(self):
 	
-		for dan in range(4):
-			self.geo_trees.op('geo_dan_{}/replicator_tree'.format(dan)).par.recreateall.pulse()
+		self.RandomizeTreeShape()
+		self.geo_trees.op('geo_dan_0/replicator_tree').par.recreateall.pulse()
+		self.geo_trees.op('geo_dan_1/replicator_tree').par.recreateall.pulse()
+		self.geo_trees.op('geo_dan_2/replicator_tree').par.recreateall.pulse()
+		self.geo_trees.op('geo_dan_3/replicator_tree').par.recreateall.pulse()
+		
 
 
 	def RandomizeTreeShape(self):
 
-		for dan in range(4):
-			self.geo_trees.op('geo_dan_{}/base_shape/pattern_seed_offset'.format(dan)).par.randomize.pulse()
-			self.geo_trees.op('geo_dan_{}/base_shape/pattern_seed_truck'.format(dan)).par.randomize.pulse()
-			self.geo_trees.op('geo_dan_{}/base_shape/pattern_seed_lsystem'.format(dan)).par.randomize.pulse()
+		self.geo_trees.op('geo_dan_0/base_shape/pattern_seed_offset').par.randomize.pulse()
+		self.geo_trees.op('geo_dan_0/base_shape/pattern_seed_truck').par.randomize.pulse()
+		self.geo_trees.op('geo_dan_0/base_shape/pattern_seed_lsystem').par.randomize.pulse()
+
+		self.geo_trees.op('geo_dan_1/base_shape/pattern_seed_offset').par.randomize.pulse()
+		self.geo_trees.op('geo_dan_1/base_shape/pattern_seed_truck').par.randomize.pulse()
+		self.geo_trees.op('geo_dan_1/base_shape/pattern_seed_lsystem').par.randomize.pulse()
+
+		self.geo_trees.op('geo_dan_2/base_shape/pattern_seed_offset').par.randomize.pulse()
+		self.geo_trees.op('geo_dan_2/base_shape/pattern_seed_truck').par.randomize.pulse()
+		self.geo_trees.op('geo_dan_2/base_shape/pattern_seed_lsystem').par.randomize.pulse()
+
+		self.geo_trees.op('geo_dan_3/base_shape/pattern_seed_offset').par.randomize.pulse()
+		self.geo_trees.op('geo_dan_3/base_shape/pattern_seed_truck').par.randomize.pulse()
+		self.geo_trees.op('geo_dan_3/base_shape/pattern_seed_lsystem').par.randomize.pulse()
+
+		
