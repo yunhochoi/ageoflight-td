@@ -18,7 +18,7 @@ class LsystemExt:
 		
 		self.Generations = 0
 		self.GrowSpeed = 1
-		self.GrowNormalize = 50
+		self.GrowNormalize = 100
 		self.GrowRange = 5
 		self.Type = 'skel'
 
@@ -32,7 +32,8 @@ class LsystemExt:
 
 	
 	def StartGrowth(self):
-
+		
+		self.InitLsystem()
 		self.ownerComp.op('base_grow/timer_grow_0').par.start.pulse()
 		self.ownerComp.op('base_grow/timer_grow_1').par.start.pulse()
 		self.ownerComp.op('base_grow/timer_grow_2').par.start.pulse()

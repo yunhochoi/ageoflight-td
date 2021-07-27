@@ -9,10 +9,15 @@ class TreeExt:
 		# attributes:
 		self.NumDan = 3
 		self.NumTree = 12
-		self.DanDistance = 5
+		self.DanDistance = 4
 		self.DanOffsetRange = 2
-		self.TruckHeight = 10
+		self.TruckHeight = 7
 		self.TruckPoint = 10
+
+	def CreateTrees(self):
+	
+		for dan in range(4):
+			self.geo_trees.op('geo_dan_{}/replicator_tree'.format(dan)).par.recreateall.pulse()
 
 
 	def RandomizeTreeShape(self):
