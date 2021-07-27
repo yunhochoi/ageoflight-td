@@ -16,12 +16,11 @@ class LsystemExt:
 		self.samples = None
 		self.rootDictionary = None
 		
-		self.numDan = 4
 		self.Generations = 0
 		self.GrowSpeed = 1
-		self.GrowNormalize = 50
-		self.GrowRange = 4
-		self.Type = 'tube'
+		self.GrowNormalize = 100
+		self.GrowRange = 5
+		self.Type = 'skel'
 
 
 	def InitLsystem(self):
@@ -33,7 +32,8 @@ class LsystemExt:
 
 	
 	def StartGrowth(self):
-
+		
+		self.InitLsystem()
 		self.ownerComp.op('base_grow/timer_grow_0').par.start.pulse()
 		self.ownerComp.op('base_grow/timer_grow_1').par.start.pulse()
 		self.ownerComp.op('base_grow/timer_grow_2').par.start.pulse()
