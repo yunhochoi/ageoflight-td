@@ -9,7 +9,8 @@ class TreeExt:
 		# attributes:
 		self.NumDan = 3
 		self.DanDistance = 4
-		self.DanOffsetRange = 2
+		self.DanOffsetRangePosition = 2
+		self.DanOffsetRangeHeight = 2
 		self.TruckHeight = 7
 		self.TruckPoint = 10
 
