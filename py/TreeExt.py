@@ -27,3 +27,4 @@ class TreeExt:
 			self.geo_trees.op('geo_dan_{}/base_shape/pattern_offsetX'.format(dan)).par.randomize.pulse()
 			self.geo_trees.op('geo_dan_{}/base_shape/pattern_seed_offset'.format(dan)).par.randomize.pulse()
 			self.geo_trees.op('geo_dan_{}/base_shape/pattern_seed_truck'.format(dan)).par.randomize.pulse()
+			self.geo_trees.op('geo_dan_{}/base_shape/pattern_seed_lsystem'.format(dan)).par.randomize.pulse()
