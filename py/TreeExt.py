@@ -8,7 +8,6 @@ class TreeExt:
 
 		# attributes:
 		self.NumDan = 3
-		self.NumTree = 12
 		self.DanDistance = 4
 		self.DanOffsetRange = 2
 		self.TruckHeight = 7
