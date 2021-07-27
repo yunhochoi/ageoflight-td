@@ -10,9 +10,9 @@ class TreeExt:
 		self.NumDan = 3
 		self.DanDistance = 4
 		self.DanOffsetRangePosition = 2
-		self.DanOffsetRangeHeight = 2
-		self.DanOffsetRangeGravity = 10
-		self.TruckHeight = 7
+		self.DanOffsetRangeHeight = 5
+		self.DanOffsetRangeGravity = 20
+		self.TruckHeight = 8
 		self.TruckPoint = 10
 
 	def CreateTrees(self):
