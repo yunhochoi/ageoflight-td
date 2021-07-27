@@ -20,8 +20,8 @@ class LsystemExt:
 		self.Generations = 0
 		self.GrowSpeed = 1
 		self.GrowNormalize = 50
-		self.GrowRange = 4
-		self.Type = 'tube'
+		self.GrowRange = 5
+		self.Type = 'skel'
 
 
 	def InitLsystem(self):
