@@ -11,11 +11,15 @@ class DataExt:
 		# attributes:
 
 		# Initializations
-		self.webclient_data.par.request.pulse()
+		run("op.Data.op('webclient_data').par.request.pulse()",fromOP = me, delayFrames = 2*me.time.rate)
 
 	def OnRequest(self):
 
-		self.tree.CreateTrees()
+		self.tree.RandomizeTreeShape()
+		self.lsystem.InitLsystem()
 		self.lsystem.StartGrowth()
+		self.tree.CreateTrees()
+		
+		
 		
 		

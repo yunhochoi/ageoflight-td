@@ -33,7 +33,6 @@ class LsystemExt:
 	
 	def StartGrowth(self):
 		
-		self.InitLsystem()
 		self.ownerComp.op('base_grow/timer_grow_0').par.start.pulse()
 		self.ownerComp.op('base_grow/timer_grow_1').par.start.pulse()
 		self.ownerComp.op('base_grow/timer_grow_2').par.start.pulse()
