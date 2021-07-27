@@ -15,10 +15,10 @@ class TreeExt:
 		self.TruckHeight = 8
 		self.TruckPoint = 10
 
+
 	
 	def CreateTrees(self):
-	
-		self.RandomizeTreeShape()
+
 		self.geo_trees.op('geo_dan_0/replicator_tree').par.recreateall.pulse()
 		self.geo_trees.op('geo_dan_1/replicator_tree').par.recreateall.pulse()
 		self.geo_trees.op('geo_dan_2/replicator_tree').par.recreateall.pulse()
@@ -43,5 +43,7 @@ class TreeExt:
 		self.geo_trees.op('geo_dan_3/base_shape/pattern_seed_offset').par.randomize.pulse()
 		self.geo_trees.op('geo_dan_3/base_shape/pattern_seed_truck').par.randomize.pulse()
 		self.geo_trees.op('geo_dan_3/base_shape/pattern_seed_lsystem').par.randomize.pulse()
+
+		return
 
 		

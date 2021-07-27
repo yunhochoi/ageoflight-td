@@ -17,6 +17,7 @@ class DataExt:
 
 		self.tree.CreateTrees()
 		self.lsystem.StartGrowth()
+		self.tree.RandomizeTreeShape()
 		
 		
 		
