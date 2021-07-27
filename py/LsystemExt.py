@@ -16,7 +16,6 @@ class LsystemExt:
 		self.samples = None
 		self.rootDictionary = None
 		
-		self.numDan = 4
 		self.Generations = 0
 		self.GrowSpeed = 1
 		self.GrowNormalize = 50
