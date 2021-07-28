@@ -1,6 +1,7 @@
 uniform float uTime;
 uniform float uDelta;
 uniform float uVelDamping;
+uniform float uLifeDamping;
 uniform vec4 uNoiseFactor;
 
 layout (local_size_x = 8, local_size_y = 8) in;
@@ -39,6 +40,11 @@ vec3 curlNoise( vec3 p ){
 
 }
 
+float parabola( float x, float k )
+{
+    return pow( 4.0*x*(1.0-x), k );
+}
+
 void main()
 {
 	vec4 p = texelFetch(sTD2DInputs[0], ivec2(gl_GlobalInvocationID.xy), 0);
@@ -50,13 +56,21 @@ void main()
     vec3 ini = i.rgb;
 
     // position
+    float life = p.a;
+    life -= uLifeDamping;
+
+    if (life <= uLifeDamping){
+        life = 1.0;
+        pos = ini;
+    }
     pos += vel;
-    imageStore(mTDComputeOutputs[0], ivec2(gl_GlobalInvocationID.xy), TDOutputSwizzle(vec4(pos, 1.0)));
+    imageStore(mTDComputeOutputs[0], ivec2(gl_GlobalInvocationID.xy), TDOutputSwizzle(vec4(pos, life)));
 
     // velocity
     vec3 noise = uDelta * uNoiseFactor.x * curlNoise(pos * uNoiseFactor.y + uTime * uNoiseFactor.z);
     vel += noise * uNoiseFactor.w;
     vel *= uVelDamping;
 
-    imageStore(mTDComputeOutputs[1], ivec2(gl_GlobalInvocationID.xy), TDOutputSwizzle(vec4(vel, 1.0)));
+    float size = parabola(1.0 - life, 1.0);
+    imageStore(mTDComputeOutputs[1], ivec2(gl_GlobalInvocationID.xy), TDOutputSwizzle(vec4(vel, size)));
 }
