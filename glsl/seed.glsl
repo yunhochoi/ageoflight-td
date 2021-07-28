@@ -1,3 +1,8 @@
+uniform float uTime;
+uniform float uDelta;
+uniform float uVelDamping;
+uniform vec4 uNoiseFactor;
+
 layout (local_size_x = 8, local_size_y = 8) in;
 
 vec3 snoiseVec3( vec3 x ){
@@ -49,7 +54,9 @@ void main()
     imageStore(mTDComputeOutputs[0], ivec2(gl_GlobalInvocationID.xy), TDOutputSwizzle(vec4(pos, 1.0)));
 
     // velocity
-    vec3 noise = curlNoise(pos);
-    vel += noise;
+    vec3 noise = uDelta * uNoiseFactor.x * curlNoise(pos * uNoiseFactor.y + uTime * uNoiseFactor.z);
+    vel += noise * uNoiseFactor.w;
+    vel *= uVelDamping;
+
     imageStore(mTDComputeOutputs[1], ivec2(gl_GlobalInvocationID.xy), TDOutputSwizzle(vec4(vel, 1.0)));
 }
