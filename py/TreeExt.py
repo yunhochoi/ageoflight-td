@@ -4,15 +4,20 @@ class TreeExt:
 		
 		# Operators
 		self.ownerComp = ownerComp
+		self.feedback_posBuffer = self.ownerComp.op('base_trees/geo_jung/feedback_posBuffer')
+		self.feedback_velBuffer = self.ownerComp.op('base_trees/geo_jung/feedback_velBuffer')
 
 		# attributes:
-		self.NumDan = 7
-		self.DanDistance = 3
-		self.DanOffsetRangePosition = 2
-		self.DanOffsetRangeHeight = 2
+		self.NumDan = 10
+		self.DanDistance = 5
+		self.DanOffsetRangePosition = 6
+		self.DanOffsetRangeHeight = 5
 		self.DanOffsetRangeGravity = 5
-		self.TruckHeight = 8
+		self.TruckHeight = 12
 		self.TruckPoint = 5
+		self.ParticleHeight = 16
+	
+		
 
 
 	def CreateTrees(self):
@@ -41,4 +46,14 @@ class TreeExt:
 		self.ownerComp.op('base_trees/geo_dan_3/base_shape/pattern_seed_trunk').par.randomize.pulse()
 		self.ownerComp.op('base_trees/geo_dan_3/base_shape/pattern_seed_lsystem').par.randomize.pulse()
 
-		
+
+	def HideParticles(self):
+		print('hide')
+		self.feedback_posBuffer.par.reset = True
+		self.feedback_velBuffer.par.reset = True
+
+
+	def ShowParticles(self):
+		print('show')
+		self.feedback_posBuffer.par.reset = False
+		self.feedback_velBuffer.par.reset = False
