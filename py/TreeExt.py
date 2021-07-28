@@ -8,14 +8,14 @@ class TreeExt:
 		self.feedback_velBuffer = self.ownerComp.op('base_trees/geo_jung/feedback_velBuffer')
 
 		# attributes:
-		self.NumDan = 10
-		self.DanDistance = 5
-		self.DanOffsetRangePosition = 6
+		self.NumDan = 4
+		self.DanDistance = 1.6
+		self.DanOffsetRangePosition = 0.3
 		self.DanOffsetRangeHeight = 5
 		self.DanOffsetRangeGravity = 5
 		self.TruckHeight = 12
 		self.TruckPoint = 5
-		self.ParticleHeight = 16
+		self.ParticleHeight = 10
 	
 		
 
