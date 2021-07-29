@@ -13,7 +13,7 @@ class TreeExt:
 	
 		'''base_trees'''
 		# shapes
-		self.NumDan = 10                   
+		self.NumDan = 10                  
 		self.DanDistance = 1
 		self.DanOffsetRangePosition = 1
 		self.DanOffsetRangeHeight = 5
@@ -64,7 +64,7 @@ class TreeExt:
 		danTotal = kwargs.get('danTotal', None)
 
 		# print(len(posts))
-		
+
 
 	def ExportJSON(self):
 
