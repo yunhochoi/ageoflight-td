@@ -47,13 +47,17 @@ class TreeExt:
 		self.ownerComp.op('base_trees/geo_dan_3/base_shape/pattern_seed_lsystem').par.randomize.pulse()
 
 
-	def HideParticles(self):
-		print('hide')
-		self.feedback_posBuffer.par.reset = True
-		self.feedback_velBuffer.par.reset = True
+	# def HideParticles(self):
+		
+	# 	self.feedback_posBuffer.par.reset = True
+	# 	self.feedback_velBuffer.par.reset = True
 
 
-	def ShowParticles(self):
-		print('show')
-		self.feedback_posBuffer.par.reset = False
-		self.feedback_velBuffer.par.reset = False
+	# def ShowParticles(self):
+		
+	# 	self.feedback_posBuffer.par.reset = False
+	# 	self.feedback_velBuffer.par.reset = False
+
+
+	def RouteData(self, **kwargs):
+		print(kwargs)
