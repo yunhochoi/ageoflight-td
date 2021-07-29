@@ -52,4 +52,5 @@ TDImportCache/*
 
 # Files to ignore
 CrashAutoSave.toe
+CrashAutoSave.ageoflight.toe
 *.dmp
