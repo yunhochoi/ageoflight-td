@@ -64,23 +64,7 @@ class TreeExt:
 		danTotal = kwargs.get('danTotal', None)
 
 		# print(len(posts))
-
-	
-	def InitLsystem(self):
-
-		self.ownerComp.op('base_process/timer_grow_0').par.initialize.pulse()
-		self.ownerComp.op('base_process/timer_grow_1').par.initialize.pulse()
-		self.ownerComp.op('base_process/timer_grow_2').par.initialize.pulse()
-		self.ownerComp.op('base_process/timer_grow_3').par.initialize.pulse()
-
-	
-	def StartGrowth(self):
 		
-		self.ownerComp.op('base_process/timer_grow_0').par.start.pulse()
-		self.ownerComp.op('base_process/timer_grow_1').par.start.pulse()
-		self.ownerComp.op('base_process/timer_grow_2').par.start.pulse()
-		self.ownerComp.op('base_process/timer_grow_3').par.start.pulse()
-
 
 	def ExportJSON(self):
 
