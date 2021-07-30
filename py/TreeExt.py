@@ -6,26 +6,43 @@ class TreeExt:
 		self.ownerComp = ownerComp
 
 		'''base_process'''
+		self.DummyData = False
 		self.GrowSpeed = 1
 		self.GrowNormalize = 100
-		self.GrowRangeMin = 4.2
-		self.GrowRangeMax = 6
+		self.GrowRangeMin = 2.5
+		self.GrowRangeMax = 4.5
 	
 		'''base_trees'''
-		# shapes
-		self.NumDan = 10                  
-		self.DanDistance = 1
+		# num, position
+		self.NumDan = 5          
+		self.DanDistance = 0.7
 		self.DanOffsetRangePosition = 0.7
-		self.DanOffsetRangeHeight = 5
+		self.DanOffsetRangeHeight = 2
 		self.DanOffsetRangeGravity = 10
-		self.TrunkHeight = 14
-		self.TrunkPoint = 5
 
+		# data driven trunk, branch shape
+		self.LowTrunkHeight = 12
+		self.HighTrunkLengthMin = 0.1
+		self.HighTrunkLengthMax = 1
+		self.TrunkPoint = 5
+		self.HighTrunkRx = [ 45,  45, -45,  -45 ]
+		self.BranchRx    = [ 45,  45, -45,  -45 ]
+		self.HighTrunkRy = [ 0,   45,   0,   45 ]
+		self.BranchRy    = [ 0,   45,   0,   45 ]
+		self.HighTrunkRz = [ -45, 60,  45,  -45 ]
+		self.BranchRz    = [ -90, 90,  90,  -90 ]
+
+		# fixed trunk, branch shape
+		self.NumFixedTrunk = 7
+		self.FixedTrunkHeight = 8
+		self.FixedTrunkScale = 2
+		self.FixedTrunkScaleStep = [1.1, 1.0, 1.1]
+		self.FixedTrunkPosStep = 0.5
+		
 		# lsystem parameters
 		self.Contangl = 1
-		self.Contlength = 1
+		self.Contlength = 0
 		self.Angleinit = 100
-
 		
 		
 	def CreateTrees(self):
