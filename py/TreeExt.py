@@ -15,11 +15,11 @@ class TreeExt:
 		'''base_trees'''
 		# shapes
 		self.NumDan = 5          
-		self.DanDistance = 1
-		self.DanOffsetRangePosition = 1.5
+		self.DanDistance = 0.7
+		self.DanOffsetRangePosition = 0.7
 		self.DanOffsetRangeHeight = 3
 		self.DanOffsetRangeGravity = 10
-		self.TrunkHeight = 14
+		self.TrunkHeight = 12
 		self.TrunkPoint = 5
 		self.HighTrunkLength = 0.3
 		self.HighTrunkRx = [ 45,  45, -45,  -45 ]
@@ -27,7 +27,7 @@ class TreeExt:
 		self.HighTrunkRy = [ 0,   45,   0,   45 ]
 		self.BranchRy    = [ 0,   45,   0,   45 ]
 		self.HighTrunkRz = [ -45, 45,  45,  -45 ]
-		self.BranchRz    = [ -45, 45,  45,  -45 ]
+		self.BranchRz    = [ -90, 90,  90,  -90 ]
 		
 
 		# lsystem parameters
