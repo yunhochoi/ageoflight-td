@@ -8,12 +8,12 @@ class TreeExt:
 		'''base_process'''
 		self.GrowSpeed = 1
 		self.GrowNormalize = 100
-		self.GrowRangeMin = 4.2
-		self.GrowRangeMax = 6
+		self.GrowRangeMin = 1
+		self.GrowRangeMax = 4.5
 	
 		'''base_trees'''
 		# shapes
-		self.NumDan = 10                  
+		self.NumDan = 3               
 		self.DanDistance = 1
 		self.DanOffsetRangePosition = 0.7
 		self.DanOffsetRangeHeight = 5
@@ -23,7 +23,7 @@ class TreeExt:
 
 		# lsystem parameters
 		self.Contangl = 1
-		self.Contlength = 1
+		self.Contlength = 0
 		self.Angleinit = 100
 
 		
