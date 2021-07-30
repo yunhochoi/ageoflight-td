@@ -8,17 +8,17 @@ class TreeExt:
 		'''base_process'''
 		self.GrowSpeed = 1
 		self.GrowNormalize = 100
-		self.GrowRangeMin = 1.5
+		self.GrowRangeMin = 3.7
 		self.GrowRangeMax = 5.5
 	
 		'''base_trees'''
 		# shapes
-		self.NumDan = 10                   
+		self.NumDan = 10                  
 		self.DanDistance = 1
 		self.DanOffsetRangePosition = 1
 		self.DanOffsetRangeHeight = 5
 		self.DanOffsetRangeGravity = 10
-		self.TrunkHeight = 12
+		self.TrunkHeight = 20
 		self.TrunkPoint = 5
 
 		# lsystem parameters
@@ -64,22 +64,6 @@ class TreeExt:
 		danTotal = kwargs.get('danTotal', None)
 
 		# print(len(posts))
-
-	
-	def InitLsystem(self):
-
-		self.ownerComp.op('base_process/timer_grow_0').par.initialize.pulse()
-		self.ownerComp.op('base_process/timer_grow_1').par.initialize.pulse()
-		self.ownerComp.op('base_process/timer_grow_2').par.initialize.pulse()
-		self.ownerComp.op('base_process/timer_grow_3').par.initialize.pulse()
-
-	
-	def StartGrowth(self):
-		
-		self.ownerComp.op('base_process/timer_grow_0').par.start.pulse()
-		self.ownerComp.op('base_process/timer_grow_1').par.start.pulse()
-		self.ownerComp.op('base_process/timer_grow_2').par.start.pulse()
-		self.ownerComp.op('base_process/timer_grow_3').par.start.pulse()
 
 
 	def ExportJSON(self):

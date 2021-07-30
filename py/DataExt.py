@@ -7,7 +7,6 @@ class DataExt:
 		# Operators
 		self.ownerComp = ownerComp
 		self.tree = op.Tree
-		self.lsystem = op.Lsystem
 		self.null_json = self.ownerComp.op('null_json')
 		self.webclient_data = self.ownerComp.op('webclient_data')
 
