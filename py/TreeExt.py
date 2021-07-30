@@ -9,11 +9,11 @@ class TreeExt:
 		self.GrowSpeed = 1
 		self.GrowNormalize = 100
 		self.GrowRangeMin = 1
-		self.GrowRangeMax = 4.5
+		self.GrowRangeMax = 4
 	
 		'''base_trees'''
 		# shapes
-		self.NumDan = 3               
+		self.NumDan = 1               
 		self.DanDistance = 1
 		self.DanOffsetRangePosition = 0.7
 		self.DanOffsetRangeHeight = 5
