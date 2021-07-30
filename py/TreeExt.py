@@ -20,6 +20,7 @@ class TreeExt:
 		self.DanOffsetRangeGravity = 10
 		self.TrunkHeight = 14
 		self.TrunkPoint = 5
+		self.HighTrunkLength = 0.3
 
 		# lsystem parameters
 		self.Contangl = 1
