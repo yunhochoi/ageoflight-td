@@ -6,21 +6,29 @@ class TreeExt:
 		self.ownerComp = ownerComp
 
 		'''base_process'''
+		self.DummyData = False
 		self.GrowSpeed = 1
 		self.GrowNormalize = 100
 		self.GrowRangeMin = 1
-		self.GrowRangeMax = 4
+		self.GrowRangeMax = 3.8
 	
 		'''base_trees'''
 		# shapes
-		self.NumDan = 1               
+		self.NumDan = 5          
 		self.DanDistance = 1
-		self.DanOffsetRangePosition = 0.7
-		self.DanOffsetRangeHeight = 5
+		self.DanOffsetRangePosition = 1.5
+		self.DanOffsetRangeHeight = 2
 		self.DanOffsetRangeGravity = 10
 		self.TrunkHeight = 14
 		self.TrunkPoint = 5
-		self.HighTrunkLength = 0.3
+		self.HighTrunkLength = 0.2
+		self.HighTrunkRx = [ 45,  45, -45,  -45 ]
+		self.BranchRx    = [ 45,  45, -45,  -45 ]
+		self.HighTrunkRy = [ 0,   45,   0,   45 ]
+		self.BranchRy    = [ 0,   45,   0,   45 ]
+		self.HighTrunkRz = [ -45, 45,  45,  -45 ]
+		self.BranchRz    = [ -45, 45,  45,  -45 ]
+		
 
 		# lsystem parameters
 		self.Contangl = 1
