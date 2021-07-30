@@ -23,7 +23,7 @@ class TreeExt:
 		# data driven trunk, branch shape
 		self.LowTrunkHeight = 12
 		self.HighTrunkLengthMin = 0.1
-		self.HighTrunkLengthMax = 1
+		self.HighTrunkLengthMax = 0.7
 		self.TrunkPoint = 5
 		self.HighTrunkRx = [ 45,  45, -45,  -45 ]
 		self.BranchRx    = [ 45,  45, -45,  -45 ]
