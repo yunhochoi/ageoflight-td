@@ -7,36 +7,36 @@ class TreeExt:
 
 		'''base_process'''
 		self.DummyData = False
-		self.GrowSpeed = 1
+		self.GrowSpeed = 2
 		self.GrowNormalize = 100
-		self.GrowRangeMin = 2.5
-		self.GrowRangeMax = 4.5
+		self.GrowRangeMin = 2.9
+		self.GrowRangeMax = 4.4
 	
 		'''base_trees'''
 		# num, position
-		self.NumDan = 5          
-		self.DanDistance = 0.7
+		self.NumDan = 6          
+		self.DanDistance = 0.5
 		self.DanOffsetRangePosition = 0.7
 		self.DanOffsetRangeHeight = 2
 		self.DanOffsetRangeGravity = 10
 
 		# data driven trunk, branch shape
 		self.LowTrunkHeight = 12
-		self.HighTrunkLengthMin = 0.1
+		self.HighTrunkLengthMin = 0.25
 		self.HighTrunkLengthMax = 0.7
 		self.TrunkPoint = 5
 		self.HighTrunkRx = [ 45,  45, -45,  -45 ]
 		self.BranchRx    = [ 45,  45, -45,  -45 ]
-		self.HighTrunkRy = [ 0,   45,   0,   45 ]
-		self.BranchRy    = [ 0,   45,   0,   45 ]
-		self.HighTrunkRz = [ -45, 60,  45,  -45 ]
+		self.HighTrunkRy = [ 0,   45,   0,   10 ]
+		self.BranchRy    = [-60,   30,   30,  -45 ]
+		self.HighTrunkRz = [ -30, 60,  45,  -60 ]
 		self.BranchRz    = [ -90, 90,  90,  -90 ]
 
 		# fixed trunk, branch shape
 		self.NumFixedTrunk = 7
-		self.FixedTrunkHeight = 8
+		self.FixedTrunkHeight = 11
 		self.FixedTrunkScale = 2
-		self.FixedTrunkScaleStep = [1.1, 1.0, 1.1]
+		self.FixedTrunkScaleStep = [1.2, 1.0, 1.1]
 		self.FixedTrunkPosStep = 0.5
 		
 		# lsystem parameters
