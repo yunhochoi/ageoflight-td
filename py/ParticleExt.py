@@ -9,8 +9,12 @@ class ParticleExt:
 		self.a = 0 # attribute
 		self.B = 1 # promoted attribute
 
-	def myFunction(self, v):
-		debug(v)
 
-	def PromotedFunction(self, v):
-		debug(v)
+	def RouteData(self, **kwargs):
+		
+		# show data
+		posts = kwargs.get('posts', None)
+		wind = kwargs.get('wind', None)
+		danTotal = kwargs.get('danTotal', None)
+
+		print(len(posts))

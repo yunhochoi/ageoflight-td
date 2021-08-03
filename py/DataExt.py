@@ -7,6 +7,7 @@ class DataExt:
 		# Operators
 		self.ownerComp = ownerComp
 		self.tree = op.Tree
+		self.particle = op.Particle
 		self.null_json = self.ownerComp.op('null_json')
 		self.webclient_data = self.ownerComp.op('webclient_data')
 
@@ -25,12 +26,13 @@ class DataExt:
 
 			# load conductor message/command
 			payload = json.loads(message)
-
+			
 			# raw message dump/display
 			self.ownerComp.op('text_json').text = json.dumps(payload, sort_keys=True, indent=4)
 
 			# Process data
-			self.tree.RouteData(**payload)
+			op.Particle.RouteData(**payload)
+
 
 
 
