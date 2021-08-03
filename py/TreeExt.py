@@ -80,7 +80,7 @@ class TreeExt:
 		wind = kwargs.get('wind', None)
 		danTotal = kwargs.get('danTotal', None)
 
-		# print(len(posts))
+		print(len(posts))
 
 
 	def ExportJSON(self):
