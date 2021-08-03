@@ -73,16 +73,6 @@ class TreeExt:
 		self.ownerComp.op('base_trees/geo_dan_3/base_shape/pattern_seed_lsystem').par.randomize.pulse()
 
 
-	# def RouteData(self, **kwargs):
-		
-	# 	# show data
-	# 	posts = kwargs.get('posts', None)
-	# 	wind = kwargs.get('wind', None)
-	# 	danTotal = kwargs.get('danTotal', None)
-
-	# 	print(len(posts))
-
-
 	def ExportJSON(self):
 
 		self.rootDictionary = {}
