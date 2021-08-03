@@ -1,4 +1,9 @@
 import json
+import logging 
+import traceback
+from TDStoreTools import StorageManager
+TDF = op.TDModules.mod.TDFunctions
+
 
 class DataExt:
 	
@@ -14,7 +19,7 @@ class DataExt:
 		# attributes
 
 		# Initializations
-		run("op.Data.op('webclient_data').par.request.pulse()",fromOP = me, delayFrames = 2*me.time.rate)
+		run("op.Data.op('webclient_data').par.request.pulse()",fromOP = me, delayFrames = me.time.rate)
 
 
 	def ParseJSON(self):
@@ -31,8 +36,22 @@ class DataExt:
 			self.ownerComp.op('text_json').text = json.dumps(payload, sort_keys=True, indent=4)
 
 			# Process data
-			op.Particle.RouteData(**payload)
+			self.routeData(**payload)
 
+
+	def routeData(self, **kwargs):
+		
+		wind = kwargs.get('wind', None)
+		danTotal = kwargs.get('danTotal', None)
+		posts = kwargs.get('posts', None)
+
+		self.particle.op('base_process/table_jung_0').clear()
+		self.particle.op('base_process/table_jung_1').clear()
+
+		for jung in range(10):
+
+			self.particle.op('base_process/table_jung_0').appendRows([posts[jung]['jung'][0]])
+			self.particle.op('base_process/table_jung_1').appendRows([posts[jung]['jung'][1]])
 
 
 
