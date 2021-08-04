@@ -4,12 +4,17 @@ class ParticleExt:
 
 		# Operators
 		self.ownerComp = ownerComp
-		null_color = self.ownerComp.op('base_process/null_color')
 
-		# attributes
-		self.BlinkMode = 1  # 0: nothing, 1: blinking 2: crossfading
-		self.BlinkSpeed = 5
-		self.BlinkAlpha = True
+		# color control
+		self.BlinkMode = 2   # 0: nothing, 1: blinking 2: crossfading
+		self.BlinkSpeed = 1
+		self.BlinkAlphaNoise = True
+
+		# particle shape
+		self.ParticleHeight = 12
+		self.ParticleWidth = 16
+		self.ParticleFormScale = 2.5
+		self.VerticalMove = 5
 
 
 	def SetupParticleColor(self, scriptOp):
@@ -34,6 +39,7 @@ class ParticleExt:
 		jung_1_b = scriptOp['jung_1_b']
 		
 		for sample in range(0, scriptOp.numSamples):
+
 			jung_0_r[sample] = op.Data.Jung0[sample][0] / 255
 			jung_0_g[sample] = op.Data.Jung0[sample][1] / 255
 			jung_0_b[sample] = op.Data.Jung0[sample][2] / 255
