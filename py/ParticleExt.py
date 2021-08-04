@@ -1,33 +1,21 @@
-from TDStoreTools import StorageManager
-TDF = op.TDModules.mod.TDFunctions
-
-
 class ParticleExt:
 	
 	def __init__(self, ownerComp):
 
 		# Operators
 		self.ownerComp = ownerComp
-        # self.data = op.Data
+		null_color = self.ownerComp.op('base_process/null_color')
 
 		# attributes
-		null_color = self.ownerComp.op('base_process/null_color')
-		self.colorLookup = {'1': [null_color['r'][0], null_color['g'][0], null_color['b'][0]],
-							'2': [null_color['r'][1], null_color['g'][1], null_color['b'][1]],
-							'3': [null_color['r'][2], null_color['g'][2], null_color['b'][2]],
-							'4': [null_color['r'][3], null_color['g'][3], null_color['b'][3]],
-							'5': [null_color['r'][4], null_color['g'][4], null_color['b'][4]],
-							'6': [null_color['r'][5], null_color['g'][5], null_color['b'][5]],
-							'7': [null_color['r'][6], null_color['g'][6], null_color['b'][6]],
-							'8': [null_color['r'][7], null_color['g'][7], null_color['b'][7]]
-							
-						   }
+		self.BlinkMode = 1  # 0: nothing, 1: blinking 2: crossfading
+		self.BlinkSpeed = 5
+		self.BlinkAlpha = True
+
 
 	def SetupParticleColor(self, scriptOp):
 
 		scriptOp.clear()
 		scriptOp.numSamples = scriptOp.inputs[0].numSamples
-		# scriptOp.numSamples = len(op.Data.Jung0)
 		jung_0_r = scriptOp.appendChan('jung_0_r')
 		jung_0_g = scriptOp.appendChan('jung_0_g')
 		jung_0_b = scriptOp.appendChan('jung_0_b')
