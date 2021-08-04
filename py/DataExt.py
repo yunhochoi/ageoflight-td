@@ -63,11 +63,11 @@ class DataExt:
 		posts = kwargs.get('posts', None)
 
 		null_color = self.particle.op('base_process/null_color')
-		table_color = self.particle.op('base_process/table_color')
+		# table_color = self.particle.op('base_process/table_color')
 		self.particle.op('base_process/table_jung_0').clear()
 		self.particle.op('base_process/table_jung_1').clear()
 		
-		table_color.clear()
+		# table_color.clear()
 
 		for jung in range(100):
 
