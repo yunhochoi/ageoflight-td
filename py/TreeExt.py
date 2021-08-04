@@ -9,27 +9,27 @@ class TreeExt:
 		self.DummyData = False
 		self.GrowSpeed = 2
 		self.GrowNormalize = 100
-		self.GrowRangeMin = 3.7
-		self.GrowRangeMax = 4.5
+		self.GrowRangeMin = 3.5
+		self.GrowRangeMax = 4.3
 	
 		'''base_trees'''
 		# num, position
 		self.NumDan = 30          
-		self.DanDistance = 0.9
-		self.DanOffsetRangePosition = 0.7
+		self.DanDistance = 1
+		self.DanOffsetRangePosition = 1.1
 		self.DanOffsetRangeHeight = 2
 		self.DanOffsetRangeGravity = 10
 
 		# data driven trunk, branch shape
-		self.LowTrunkHeight = 6
-		self.HighTrunkLengthMin = 0.25
-		self.HighTrunkLengthMax = 0.7
+		self.LowTrunkHeight = 5
+		self.HighTrunkLengthMin = 0.3
+		self.HighTrunkLengthMax = 0.5
 		self.TrunkPoint = 5
-		self.HighTrunkRx = [ 35,  20, -60,  -45 ]
-		self.BranchRx    = [ 20,  30, -45,  -45 ]
-		self.HighTrunkRy = [ 30,  10,   0,   10 ]
-		self.BranchRy    = [-60,  15,  30,  -45 ]
-		self.HighTrunkRz = [-30,  45,  45,  -60 ]
+		self.HighTrunkRx = [ 30,  20, -20,  -30 ]
+		self.BranchRx    = [ 45, -45, 45,  -45 ]
+		self.HighTrunkRy = [ 0,  -90,  -90,   90 ]
+		self.BranchRy    = [-30,  -35,  30,  30 ]
+		self.HighTrunkRz = [-20,  20,  60,  -60 ]
 		self.BranchRz    = [-90,  90,  90,  -90 ]
 
 		# fixed trunk, branch shape
