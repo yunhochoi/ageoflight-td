@@ -9,34 +9,34 @@ class TreeExt:
 		self.DummyData = False
 		self.GrowSpeed = 2
 		self.GrowNormalize = 100
-		self.GrowRangeMin = 2.9
-		self.GrowRangeMax = 4.4
+		self.GrowRangeMin = 3.7
+		self.GrowRangeMax = 4.5
 	
 		'''base_trees'''
 		# num, position
-		self.NumDan = 6          
-		self.DanDistance = 0.5
+		self.NumDan = 30          
+		self.DanDistance = 0.9
 		self.DanOffsetRangePosition = 0.7
 		self.DanOffsetRangeHeight = 2
 		self.DanOffsetRangeGravity = 10
 
 		# data driven trunk, branch shape
-		self.LowTrunkHeight = 12
+		self.LowTrunkHeight = 6
 		self.HighTrunkLengthMin = 0.25
 		self.HighTrunkLengthMax = 0.7
 		self.TrunkPoint = 5
-		self.HighTrunkRx = [ 45,  45, -45,  -45 ]
-		self.BranchRx    = [ 45,  45, -45,  -45 ]
-		self.HighTrunkRy = [ 0,   45,   0,   10 ]
-		self.BranchRy    = [-60,   30,   30,  -45 ]
-		self.HighTrunkRz = [ -30, 60,  45,  -60 ]
-		self.BranchRz    = [ -90, 90,  90,  -90 ]
+		self.HighTrunkRx = [ 35,  20, -60,  -45 ]
+		self.BranchRx    = [ 20,  30, -45,  -45 ]
+		self.HighTrunkRy = [ 30,  10,   0,   10 ]
+		self.BranchRy    = [-60,  15,  30,  -45 ]
+		self.HighTrunkRz = [-30,  45,  45,  -60 ]
+		self.BranchRz    = [-90,  90,  90,  -90 ]
 
 		# fixed trunk, branch shape
-		self.NumFixedTrunk = 7
-		self.FixedTrunkHeight = 11
+		self.NumFixedTrunk = 6
+		self.FixedTrunkHeight = 3
 		self.FixedTrunkScale = 2
-		self.FixedTrunkScaleStep = [1.2, 1.0, 1.1]
+		self.FixedTrunkScaleStep = [1.2, 1.0, 1.0]
 		self.FixedTrunkPosStep = 0.5
 		
 		# lsystem parameters
