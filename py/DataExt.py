@@ -26,7 +26,6 @@ class DataExt:
 							'6': [null_color['r'][5], null_color['g'][5], null_color['b'][5]],
 							'7': [null_color['r'][6], null_color['g'][6], null_color['b'][6]],
 							'8': [null_color['r'][7], null_color['g'][7], null_color['b'][7]]
-							
 						   }
 
 		self.Jung0 = []
