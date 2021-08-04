@@ -7,13 +7,13 @@ class ParticleExt:
 
 		# color control
 		self.BlinkMode = 2   # 0: nothing, 1: blinking 2: crossfading
-		self.BlinkSpeed = .1
+		self.BlinkSpeed = 0.2
 		self.BlinkAlphaNoise = True
 
 		# particle shape
-		self.ParticleHeight = 8
-		self.ParticleWidth = 12
-		self.ParticleFormScale = 2.5
+		self.ParticleHeight = 30
+		self.ParticleWidth = 5
+		self.ParticleFormScale = 1.5
 		self.VerticalMove = 1
 
 
