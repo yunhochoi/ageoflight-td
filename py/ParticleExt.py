@@ -18,7 +18,8 @@ class ParticleExt:
 							'4': [null_color['r'][3], null_color['g'][3], null_color['b'][3]],
 							'5': [null_color['r'][4], null_color['g'][4], null_color['b'][4]],
 							'6': [null_color['r'][5], null_color['g'][5], null_color['b'][5]],
-							'7': [null_color['r'][6], null_color['g'][6], null_color['b'][6]]
+							'7': [null_color['r'][6], null_color['g'][6], null_color['b'][6]],
+							'8': [null_color['r'][7], null_color['g'][7], null_color['b'][7]]
 							
 						   }
 
@@ -45,9 +46,9 @@ class ParticleExt:
 		jung_1_b = scriptOp['jung_1_b']
 		
 		for sample in range(0, scriptOp.numSamples):
-			jung_0_r[sample] = op.Data.Jung0[sample][0]
-			jung_0_g[sample] = op.Data.Jung0[sample][1]
-			jung_0_b[sample] = op.Data.Jung0[sample][2]
-			jung_1_r[sample] = op.Data.Jung1[sample][0]
-			jung_1_g[sample] = op.Data.Jung1[sample][1]
-			jung_1_b[sample] = op.Data.Jung1[sample][2]
+			jung_0_r[sample] = op.Data.Jung0[sample][0] / 255
+			jung_0_g[sample] = op.Data.Jung0[sample][1] / 255
+			jung_0_b[sample] = op.Data.Jung0[sample][2] / 255
+			jung_1_r[sample] = op.Data.Jung1[sample][0] / 255
+			jung_1_g[sample] = op.Data.Jung1[sample][1] / 255
+			jung_1_b[sample] = op.Data.Jung1[sample][2] / 255

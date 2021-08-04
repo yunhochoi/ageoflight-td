@@ -26,7 +26,6 @@ class DataExt:
 							'6': [null_color['r'][5], null_color['g'][5], null_color['b'][5]],
 							'7': [null_color['r'][6], null_color['g'][6], null_color['b'][6]],
 							'8': [null_color['r'][7], null_color['g'][7], null_color['b'][7]]
-							
 						   }
 
 		self.Jung0 = []
@@ -63,13 +62,10 @@ class DataExt:
 		posts = kwargs.get('posts', None)
 
 		null_color = self.particle.op('base_process/null_color')
-		# table_color = self.particle.op('base_process/table_color')
 		self.particle.op('base_process/table_jung_0').clear()
 		self.particle.op('base_process/table_jung_1').clear()
-		
-		# table_color.clear()
 
-		for jung in range(100):
+		for jung in range(1000):
 
 			self.particle.op('base_process/table_jung_0').appendRows([posts[jung]['jung'][0]])
 			self.particle.op('base_process/table_jung_1').appendRows([posts[jung]['jung'][1]])
