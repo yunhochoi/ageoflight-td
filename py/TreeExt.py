@@ -9,8 +9,8 @@ class TreeExt:
 		self.DummyData = False
 		self.GrowSpeed = 2
 		self.GrowNormalize = 100
-		self.GrowRangeMin = 3.5
-		self.GrowRangeMax = 4.3
+		self.GrowRangeMin = 3.2
+		self.GrowRangeMax = 4.1
 	
 		'''base_trees'''
 		# num, position
