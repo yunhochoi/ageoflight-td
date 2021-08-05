@@ -67,8 +67,6 @@ class DataExt:
 		self.particle.op('base_process/table_jung_1').clear()
 		self.particle.op('base_process/table_jung_total').clear()
 
-		print(jungTotal)
-
 		for jung in range(1000):
 
 			self.particle.op('base_process/table_jung_0').appendRows([posts[jung]['jung'][0]])
