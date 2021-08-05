@@ -21,7 +21,7 @@ class TreeExt:
 		self.DanOffsetRangeGravity = 10
 
 		# data driven trunk, branch shape
-		self.LowTrunkHeight = 5
+		self.LowTrunkHeight = 10
 		self.HighTrunkLengthMin = 0.3
 		self.HighTrunkLengthMax = 0.5
 		self.TrunkPoint = 5
