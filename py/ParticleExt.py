@@ -8,7 +8,7 @@ class ParticleExt:
 		# color control
 		self.BlinkMode = 2   # 0: nothing, 1: blinking, 2: crossfading
 		self.BlinkSpeed = 0.2
-		self.BlinkAlphaNoise = True
+		self.BlinkAlphaNoise = False
 
 		# particle shape
 		self.ParticleMaterial = 0    # 0: PBR, 1: phong, 2: constant 
