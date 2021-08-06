@@ -18,7 +18,8 @@ class DataExt:
 
 		# attributes
 		null_color = self.particle.op('base_process/null_color')
-		self.colorLookup = {'1': [null_color['r'][0], null_color['g'][0], null_color['b'][0]],
+		self.colorLookup = {
+							'1': [null_color['r'][0], null_color['g'][0], null_color['b'][0]],
 							'2': [null_color['r'][1], null_color['g'][1], null_color['b'][1]],
 							'3': [null_color['r'][2], null_color['g'][2], null_color['b'][2]],
 							'4': [null_color['r'][3], null_color['g'][3], null_color['b'][3]],
