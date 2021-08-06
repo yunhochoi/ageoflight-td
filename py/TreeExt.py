@@ -12,7 +12,7 @@ class TreeExt:
 		self.GrowRangeMin = 3.2
 		self.GrowRangeMax = 4.1
 	
-		'''base_trees'''
+		'''geo_trees'''
 		# num, position
 		self.NumDan = 30
 		self.DanDistance = 1
@@ -52,29 +52,29 @@ class TreeExt:
 	def CreateTrees(self):
 		
 		# recreate all trees 
-		self.ownerComp.op('base_trees/geo_dan_0/replicator_tree').par.recreateall.pulse()
-		self.ownerComp.op('base_trees/geo_dan_1/replicator_tree').par.recreateall.pulse()
-		self.ownerComp.op('base_trees/geo_dan_2/replicator_tree').par.recreateall.pulse()
-		self.ownerComp.op('base_trees/geo_dan_3/replicator_tree').par.recreateall.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_0/replicator_tree').par.recreateall.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_1/replicator_tree').par.recreateall.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_2/replicator_tree').par.recreateall.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_3/replicator_tree').par.recreateall.pulse()
 	
 
 	def RandomizeTreeShape(self):
 
-		self.ownerComp.op('base_trees/geo_dan_0/base_shape/pattern_seed_offset').par.randomize.pulse()
-		self.ownerComp.op('base_trees/geo_dan_0/base_shape/pattern_seed_trunk').par.randomize.pulse()
-		self.ownerComp.op('base_trees/geo_dan_0/base_shape/pattern_seed_lsystem').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_0/base_shape/pattern_seed_offset').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_0/base_shape/pattern_seed_trunk').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_0/base_shape/pattern_seed_lsystem').par.randomize.pulse()
 
-		self.ownerComp.op('base_trees/geo_dan_1/base_shape/pattern_seed_offset').par.randomize.pulse()
-		self.ownerComp.op('base_trees/geo_dan_1/base_shape/pattern_seed_trunk').par.randomize.pulse()
-		self.ownerComp.op('base_trees/geo_dan_1/base_shape/pattern_seed_lsystem').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_1/base_shape/pattern_seed_offset').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_1/base_shape/pattern_seed_trunk').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_1/base_shape/pattern_seed_lsystem').par.randomize.pulse()
 
-		self.ownerComp.op('base_trees/geo_dan_2/base_shape/pattern_seed_offset').par.randomize.pulse()
-		self.ownerComp.op('base_trees/geo_dan_2/base_shape/pattern_seed_trunk').par.randomize.pulse()
-		self.ownerComp.op('base_trees/geo_dan_2/base_shape/pattern_seed_lsystem').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_2/base_shape/pattern_seed_offset').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_2/base_shape/pattern_seed_trunk').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_2/base_shape/pattern_seed_lsystem').par.randomize.pulse()
 
-		self.ownerComp.op('base_trees/geo_dan_3/base_shape/pattern_seed_offset').par.randomize.pulse()
-		self.ownerComp.op('base_trees/geo_dan_3/base_shape/pattern_seed_trunk').par.randomize.pulse()
-		self.ownerComp.op('base_trees/geo_dan_3/base_shape/pattern_seed_lsystem').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_3/base_shape/pattern_seed_offset').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_3/base_shape/pattern_seed_trunk').par.randomize.pulse()
+		self.ownerComp.op('geo_trees/geo_dan_3/base_shape/pattern_seed_lsystem').par.randomize.pulse()
 
 
 	def ExportJSON(self):

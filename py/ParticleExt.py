@@ -14,7 +14,8 @@ class ParticleExt:
 		# self.ParticleMaterial = 0    # 0: PBR, 1: phong, 2: constant 
 		# self.ParticleHeight = 37
 		# self.ParticleWidth = 6
-		self.ParticleScale = 5
+		self.ParticleScale = 7
+		self.ParticleSize = 0.12
 		# self.ParticleFormScale = 1.2
 		# self.VerticalMove = 1
 
