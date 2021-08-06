@@ -21,7 +21,7 @@ class TreeExt:
 		self.DanOffsetRangeGravity = 10
 
 		# data driven trunk, branch shape
-		self.LowTrunkHeight = 10
+		self.LowTrunkHeight = 3
 		self.HighTrunkLengthMin = 0.3
 		self.HighTrunkLengthMax = 0.5
 		self.TrunkPoint = 5
@@ -34,7 +34,7 @@ class TreeExt:
 
 		# fixed trunk, branch shape
 		self.NumFixedTrunk = 7
-		self.FixedTrunkHeight = 3
+		self.FixedTrunkHeight = 2
 		self.FixedTrunkScale = 2
 		self.FixedTrunkScaleStep = [1.2, 1.0, 1.10]
 		self.FixedTrunkPosStep = 0.5
