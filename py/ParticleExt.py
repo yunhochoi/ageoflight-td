@@ -6,17 +6,17 @@ class ParticleExt:
 		self.ownerComp = ownerComp
 
 		# color control
-		self.BlinkMode = 2   # 0: nothing, 1: blinking, 2: crossfading
-		self.BlinkSpeed = 0.2
-		self.BlinkAlphaNoise = False
+		# self.BlinkMode = 2   # 0: nothing, 1: blinking, 2: crossfading
+		# self.BlinkSpeed = 0.2
+		# self.BlinkAlphaNoise = False
 
-		# particle shape
-		self.ParticleMaterial = 0    # 0: PBR, 1: phong, 2: constant 
-		self.ParticleHeight = 37
-		self.ParticleWidth = 6
-		self.ParticleScale = 0.2
-		self.ParticleFormScale = 1.2
-		self.VerticalMove = 1
+		# # particle shape
+		# self.ParticleMaterial = 0    # 0: PBR, 1: phong, 2: constant 
+		# self.ParticleHeight = 37
+		# self.ParticleWidth = 6
+		self.ParticleScale = 5
+		# self.ParticleFormScale = 1.2
+		# self.VerticalMove = 1
 
 
 	# def SetupParticleColor(self, scriptOp):
