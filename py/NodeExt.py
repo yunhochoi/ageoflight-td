@@ -5,9 +5,10 @@ class NodeExt:
 		self.ownerComp = ownerComp
 
 		# attributes:
-		self.CameraMotion = False
+		self.CameraMotion = True
 		self.Sculpture = False
 		self.Night = False
+		self.CameraDistance = 0
 
 	def myFunction(self, v):
 		debug(v)

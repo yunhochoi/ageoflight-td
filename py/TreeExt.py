@@ -9,19 +9,19 @@ class TreeExt:
 		self.DummyData = False
 		self.GrowSpeed = 2
 		self.GrowNormalize = 100
-		self.GrowRangeMin = 3.2
-		self.GrowRangeMax = 4.1
+		self.GrowRangeMin = 3.5
+		self.GrowRangeMax = 4.3
 	
 		'''base_trees'''
 		# num, position
-		self.NumDan = 30          
+		self.NumDan = 12
 		self.DanDistance = 1
-		self.DanOffsetRangePosition = 1.1
+		self.DanOffsetRangePosition = 1.5
 		self.DanOffsetRangeHeight = 2
 		self.DanOffsetRangeGravity = 10
 
 		# data driven trunk, branch shape
-		self.LowTrunkHeight = 10
+		self.LowTrunkHeight = 13
 		self.HighTrunkLengthMin = 0.3
 		self.HighTrunkLengthMax = 0.5
 		self.TrunkPoint = 5
