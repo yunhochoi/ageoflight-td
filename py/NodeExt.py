@@ -7,7 +7,7 @@ class NodeExt:
 		# attributes:
 		self.CameraMotion = False
 		self.Sculpture = False
-		self.Night = False
+		self.Night = True
 		self.CameraDistance = 0
 
 	def myFunction(self, v):
