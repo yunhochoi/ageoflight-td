@@ -15,10 +15,10 @@ class ParticleExt:
 		# self.ParticleHeight = 37
 		# self.ParticleWidth = 6
 		self.NumParticle = 10000
-		self.ParticleSize = 0.14
+		self.ParticleSize = 0.17
 		
 		self.ParticleScale = 7.5
-		self.ParticleTy = 25
+		self.ParticleTy = 26
 		
 		# self.ParticleFormScale = 1.2
 		# self.VerticalMove = 1
