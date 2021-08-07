@@ -10,11 +10,11 @@ class TreeExt:
 		self.GrowSpeed = 2
 		self.GrowNormalize = 100
 		self.GrowRangeMin = 3.2
-		self.GrowRangeMax = 4.3
+		self.GrowRangeMax = 4.1
 	
 		'''geo_trees'''
 		# num, position
-		self.NumDan = 25
+		self.NumDan = 30
 		self.DanDistance = 1.7
 		self.DanOffsetRangePosition = 1.7
 		self.DanOffsetRangeHeight = 2
@@ -47,6 +47,11 @@ class TreeExt:
 		self.Contangl = 1
 		self.Contlength = 0
 		self.Angleinit = 100
+
+		# self.ownerComp.op('geo_trees/geo_dan_0/replicator_tree').par.recreateall.pulse()
+		# self.ownerComp.op('geo_trees/geo_dan_1/replicator_tree').par.recreateall.pulse()
+		# self.ownerComp.op('geo_trees/geo_dan_2/replicator_tree').par.recreateall.pulse()
+		# self.ownerComp.op('geo_trees/geo_dan_3/replicator_tree').par.recreateall.pulse()
 		
 		
 	def CreateTrees(self):
