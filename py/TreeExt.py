@@ -14,7 +14,7 @@ class TreeExt:
 	
 		'''geo_trees'''
 		# num, position
-		self.NumDan = 20
+		self.NumDan = 14
 		self.DanDistance = 0.8
 		self.DanOffsetRangePosition = 1.4
 		self.DanOffsetRangeHeight = 2
