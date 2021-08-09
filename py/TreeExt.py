@@ -9,14 +9,14 @@ class TreeExt:
 		self.DummyData = False
 		self.GrowSpeed = 2
 		self.GrowNormalize = 100
-		self.GrowRangeMin = 3.2
-		self.GrowRangeMax = 4.3
+		self.GrowRangeMin = 4
+		self.GrowRangeMax = 5
 	
 		'''geo_trees'''
 		# num, position
-		self.NumDan = 25
-		self.DanDistance = 1.7
-		self.DanOffsetRangePosition = 1.7
+		self.NumDan = 18
+		self.DanDistance = 1
+		self.DanOffsetRangePosition = 1.4
 		self.DanOffsetRangeHeight = 2
 		self.DanOffsetRangeGravity = 10
 
@@ -25,9 +25,9 @@ class TreeExt:
 		self.TreeTy = 9.5
 
 		# data driven trunk, branch shape
-		self.LowTrunkHeight = 4
+		self.LowTrunkHeight = 6.4
 		self.HighTrunkLengthMin = 0.3
-		self.HighTrunkLengthMax = 0.5
+		self.HighTrunkLengthMax = 0.4
 		self.TrunkPoint = 5
 		self.HighTrunkRx = [ 30,  20, -20,  -30 ]
 		self.BranchRx    = [ 45, -45, 45,  -45 ]
@@ -38,7 +38,7 @@ class TreeExt:
 
 		# fixed trunk, branch shape
 		self.NumFixedTrunk = 7
-		self.FixedTrunkHeight = 2
+		self.FixedTrunkHeight = 7
 		self.FixedTrunkScale = 2
 		self.FixedTrunkScaleStep = [1.2, 1.0, 1.10]
 		self.FixedTrunkPosStep = 0.5
@@ -47,6 +47,11 @@ class TreeExt:
 		self.Contangl = 1
 		self.Contlength = 0
 		self.Angleinit = 100
+
+		# self.ownerComp.op('geo_trees/geo_dan_0/replicator_tree').par.recreateall.pulse()
+		# self.ownerComp.op('geo_trees/geo_dan_1/replicator_tree').par.recreateall.pulse()
+		# self.ownerComp.op('geo_trees/geo_dan_2/replicator_tree').par.recreateall.pulse()
+		# self.ownerComp.op('geo_trees/geo_dan_3/replicator_tree').par.recreateall.pulse()
 		
 		
 	def CreateTrees(self):

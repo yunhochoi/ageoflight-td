@@ -17,7 +17,7 @@ class ParticleExt:
 		self.NumParticle = 10000
 		self.ParticleSize = 0.17
 		
-		self.ParticleScale = 7.5
+		self.ParticleScale = 7
 		self.ParticleTy = 26
 		
 		# self.ParticleFormScale = 1.2
