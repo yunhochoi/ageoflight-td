@@ -9,12 +9,12 @@ class TreeExt:
 		self.DummyData = False
 		self.GrowSpeed = 2
 		self.GrowNormalize = 100
-		self.GrowRangeMin = 3.7
+		self.GrowRangeMin = 4
 		self.GrowRangeMax = 5
 	
 		'''geo_trees'''
 		# num, position
-		self.NumDan = 14
+		self.NumDan = 20
 		self.DanDistance = 0.8
 		self.DanOffsetRangePosition = 1.4
 		self.DanOffsetRangeHeight = 2
