@@ -14,9 +14,10 @@ class TreeExt:
 	
 		'''geo_trees'''
 		# num, position
-		self.NumDan = 18
-		self.DanDistance = 1
+		self.NumDan = 16
+		self.DanDistance = 1.2
 		self.DanOffsetRangePosition = 1.4
+
 		self.DanOffsetRangeHeight = 2
 		self.DanOffsetRangeGravity = 10
 
@@ -25,7 +26,8 @@ class TreeExt:
 		self.TreeTy = 9.5
 
 		# data driven trunk, branch shape
-		self.LowTrunkHeight = 6.4
+		self.LowTrunkHeight = 5.6
+		
 		self.HighTrunkLengthMin = 0.3
 		self.HighTrunkLengthMax = 0.4
 		self.TrunkPoint = 5
