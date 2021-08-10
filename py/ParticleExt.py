@@ -19,6 +19,7 @@ class ParticleExt:
 		
 		self.ParticleScale = 7
 		self.ParticleTy = 26
+		self.SmoothFade = 0
 		
 		# self.ParticleFormScale = 1.2
 		# self.VerticalMove = 1
