@@ -39,7 +39,7 @@ class TreeExt:
 		self.BranchRz    = [-90,  90,  90,  -90 ]
 
 		# fixed trunk, branch shape
-		self.BranchLineWidth = 1.8
+		self.BranchLineWidth = 1.2
 		self.NumFixedTrunk = 7
 		self.FixedTrunkHeight = 7
 		self.FixedTrunkScale = 2
