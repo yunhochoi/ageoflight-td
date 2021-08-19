@@ -24,7 +24,6 @@ class TreeExt:
 		# tree
 		self.TreeTx = 0.3
 		self.TreeTy = 9.5
-		
 
 		# data driven trunk
 		self.LowTrunkHeight = 6.6
@@ -32,9 +31,9 @@ class TreeExt:
 		self.HighTrunkLengthMax = 0.4
 		self.TrunkPoint = 5
 		self.HighTrunkRx = [ 30,  20, -20,  -30 ]
-		self.BranchRx    = [ 45, -45, 45,  -45 ]
-		self.HighTrunkRy = [ 0,  -90,  -90,   90 ]
-		self.BranchRy    = [-30,  -35,  30,  30 ]
+		self.BranchRx    = [ 45, -45,  45,  -45 ]
+		self.HighTrunkRy = [ 0,  -90, -90,   90 ]
+		self.BranchRy    = [-30, -35,  30,   30 ]
 		self.HighTrunkRz = [-20,  20,  60,  -60 ]
 		self.BranchRz    = [-90,  90,  90,  -90 ]
 
@@ -95,7 +94,7 @@ class TreeExt:
 			
 			self.samples.append(instanceData)
 	
-		with open('json/lsystem.json', 'w') as outfile:
+		with open('json/particlePosition.json', 'w') as outfile:
 			
 			json.dump(self.samples, outfile)
 		
