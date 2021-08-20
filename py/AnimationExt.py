@@ -8,7 +8,7 @@ class AnimationExt:
 
 		# camera motion
 		self.CameraTy = 25
-		self.CameraTz = 25
+		self.CameraTz = 20
 		self.CameraDistanceBegin = 7
 		self.CameraDistanceEnd = 1
 		self.CameraFOVBegin = 45
