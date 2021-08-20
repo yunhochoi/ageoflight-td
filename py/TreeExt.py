@@ -24,7 +24,6 @@ class TreeExt:
 		# tree
 		self.TreeTx = 0.3
 		self.TreeTy = 9.5
-		
 
 		# data driven trunk
 		self.LowTrunkHeight = 6.6
@@ -32,9 +31,9 @@ class TreeExt:
 		self.HighTrunkLengthMax = 0.4
 		self.TrunkPoint = 5
 		self.HighTrunkRx = [ 30,  20, -20,  -30 ]
-		self.BranchRx    = [ 45, -45, 45,  -45 ]
-		self.HighTrunkRy = [ 0,  -90,  -90,   90 ]
-		self.BranchRy    = [-30,  -35,  30,  30 ]
+		self.BranchRx    = [ 45, -45,  45,  -45 ]
+		self.HighTrunkRy = [ 0,  -90, -90,   90 ]
+		self.BranchRy    = [-30, -35,  30,   30 ]
 		self.HighTrunkRz = [-20,  20,  60,  -60 ]
 		self.BranchRz    = [-90,  90,  90,  -90 ]
 
@@ -78,6 +77,13 @@ class TreeExt:
 		self.ownerComp.op('geo_trees/geo_dan_3/base_shape/pattern_seed_offset').par.randomize.pulse()
 		self.ownerComp.op('geo_trees/geo_dan_3/base_shape/pattern_seed_trunk').par.randomize.pulse()
 		self.ownerComp.op('geo_trees/geo_dan_3/base_shape/pattern_seed_lsystem').par.randomize.pulse()
+
+
+	def ControlTrunkVisibility(self, visibility):
+
+		for dan in range(4):
+			for tree in range(self.NumDan):
+				self.ownerComp.op('geo_trees/geo_dan_{}/geo_tree_{}'.format(dan, tree)).par.render = visibility
 
 
 	def ExportJSON(self):
