@@ -12,18 +12,20 @@ class AnimationExt:
 		self.TextDistanceY = 200
 
 		# camera motion
-		self.CamreaLookAtTy = 8
+		self.CameraLookAtTyBegin = 8
+		self.CameraLookAtTyFull = 15
+		self.CameraLookAtTyEnd = 15
 
 		self.CameraTy = 20
 		self.CameraTz = 30
 		self.CameraTx = -30
 
-		self.CameraDistanceBegin = 1
-		self.CameraDistanceFull = 1
-		self.CameraDistanceEnd = 1
+		self.CameraLateralBegin = 1
+		self.CameraLateralFull = 1.7
+		self.CameraLateralEnd = 1
 
-		self.CameraFOVBegin = 45
-		self.CameraFOVFull = 45
+		self.CameraFOVBegin = 40
+		self.CameraFOVFull = 65
 		self.CameraFOVEnd = 45
 
 		self.CameraPathBegin = 0
