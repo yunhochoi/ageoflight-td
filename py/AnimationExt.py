@@ -12,7 +12,7 @@ class AnimationExt:
 		self.TextDistanceY = 250
 
 		# camera motion
-		self.CameraLookAtTyBegin = 8
+		self.CameraLookAtTyBegin = 10.5
 		self.CameraLookAtTyFull = 12
 		self.CameraLookAtTyEnd = 15
 
