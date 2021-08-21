@@ -6,33 +6,40 @@ class AnimationExt:
 		self.ownerComp = ownerComp
 		self.constant_cross_swap = self.ownerComp.op('constant_cross_swap')
 
-		# text
+		''' 인의예지 text'''
 		self.FontSize = 40
+
+		# position
 		self.TextDistanceX = 525
 		self.TextDistanceY = 250
 
-		# camera motion
+		''' camera motion '''
+		# 카메라가 바라보는 지점 높이
 		self.CameraLookAtTyBegin = 10.5
 		self.CameraLookAtTyFull = 12
 		self.CameraLookAtTyEnd = 15
 
+		# Fixed - please do not adjust
 		self.CameraTy = 20
 		self.CameraTz = 30
 		self.CameraTx = -30
 
+		# 횡으로 이동하는 모션 값
 		self.CameraLateralBegin = 1
 		self.CameraLateralFull = 1.7
 		self.CameraLateralEnd = 2.3
 
+		# 화각 (줌)
 		self.CameraFOVBegin = 40
 		self.CameraFOVFull = 60
 		self.CameraFOVEnd = 10
 
+		# Fixed - please do not adjust
 		self.CameraPathBegin = 0
 		self.CameraPathFull = 0
 		self.CameraPathEnd = 0
 
-		# particle mode update
+		# particle mode update - 파티클 모드 바뀌는 시간
 		self.ParticleModeLength = 15
 
 
