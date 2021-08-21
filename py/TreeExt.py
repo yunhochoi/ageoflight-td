@@ -23,7 +23,7 @@ class TreeExt:
 
 		# tree
 		self.TreeTx = 0.3
-		self.TreeTy = 9.5
+		self.TreeTy = 0
 
 		# data driven trunk
 		self.LowTrunkHeight = 6.6

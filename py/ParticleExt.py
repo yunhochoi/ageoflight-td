@@ -11,7 +11,7 @@ class ParticleExt:
 		self.BlinkAlphaNoise = False
 
 		# particle shape
-		self.NumParticle = 1000
+		self.NumParticle = 2000
 		self.ParticleSize = 0.17
 		self.ParticleScale = 1.37
 		self.ParticleTy = 26
