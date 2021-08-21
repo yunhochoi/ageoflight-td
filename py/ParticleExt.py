@@ -14,7 +14,7 @@ class ParticleExt:
 		self.NumParticle = 2000
 		self.ParticleSize = 0.17
 		self.ParticleScale = 1.37
-		self.ParticleTy = 26
+		self.ParticleTy = 17
 		self.SmoothFade = 0
 		self.NoiseAlphaSpeed = 7
 	

@@ -10,7 +10,7 @@ class TreeExt:
 		self.GrowSpeed = 2
 		self.GrowNormalize = 100
 		self.GrowRangeMin = 3.8
-		self.GrowRangeMax = 4.6
+		self.GrowRangeMax = 4.4
 	
 		'''geo_trees'''
 		# num, position

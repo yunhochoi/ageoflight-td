@@ -8,12 +8,12 @@ class AnimationExt:
 
 		# text
 		self.FontSize = 40
-		self.TextDistanceX = 500
-		self.TextDistanceY = 200
+		self.TextDistanceX = 525
+		self.TextDistanceY = 250
 
 		# camera motion
 		self.CameraLookAtTyBegin = 8
-		self.CameraLookAtTyFull = 15
+		self.CameraLookAtTyFull = 12
 		self.CameraLookAtTyEnd = 15
 
 		self.CameraTy = 20
@@ -22,15 +22,18 @@ class AnimationExt:
 
 		self.CameraLateralBegin = 1
 		self.CameraLateralFull = 1.7
-		self.CameraLateralEnd = 1
+		self.CameraLateralEnd = 2.3
 
 		self.CameraFOVBegin = 40
-		self.CameraFOVFull = 65
-		self.CameraFOVEnd = 45
+		self.CameraFOVFull = 60
+		self.CameraFOVEnd = 10
 
 		self.CameraPathBegin = 0
 		self.CameraPathFull = 0
 		self.CameraPathEnd = 0
+
+		# particle mode update
+		self.ParticleModeLength = 15
 
 
 	def SwapParticleTree(self):
