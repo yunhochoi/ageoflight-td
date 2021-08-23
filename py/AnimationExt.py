@@ -7,15 +7,14 @@ class AnimationExt:
 		self.constant_cross_swap = self.ownerComp.op('constant_cross_swap')
 
 		''' 인의예지 text'''
-		self.FontSize = 40
+		self.FontSize = 20
 
 		# position
-		self.TextDistanceX = 525
-		self.TextDistanceY = 250
-
+		self.TextDistanceX = 480
+		self.TextDistanceY = 240
 		''' camera motion '''
 		# 카메라가 바라보는 지점 높이
-		self.CameraLookAtTyBegin = 10.5
+		self.CameraLookAtTyBegin = 11
 		self.CameraLookAtTyFull = 12
 		self.CameraLookAtTyEnd = 15
 
