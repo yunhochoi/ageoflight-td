@@ -14,7 +14,7 @@ class AnimationExt:
 		self.TextDistanceY = 240
 		''' camera motion '''
 		# 카메라가 바라보는 지점 높이
-		self.CameraLookAtTyBegin = 11
+		self.CameraLookAtTyBegin = 10.5
 		self.CameraLookAtTyFull = 12
 		self.CameraLookAtTyEnd = 15
 
@@ -26,12 +26,12 @@ class AnimationExt:
 		# 횡으로 이동하는 모션 값
 		self.CameraLateralBegin = 1
 		self.CameraLateralFull = 1.7
-		self.CameraLateralEnd = 2.3
+		self.CameraLateralEnd = 2.6
 
 		# 화각 (줌)
 		self.CameraFOVBegin = 40
 		self.CameraFOVFull = 60
-		self.CameraFOVEnd = 10
+		self.CameraFOVEnd = 12
 
 		# Fixed - please do not adjust
 		self.CameraPathBegin = 0
