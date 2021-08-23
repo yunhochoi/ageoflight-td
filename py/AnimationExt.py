@@ -20,8 +20,13 @@ class AnimationExt:
 
 		# Fixed - please do not adjust
 		self.CameraTy = 20
-		self.CameraTz = 30
 		self.CameraTx = -30
+
+		# Camera distance
+		self.CameraTzBegin = 10
+		self.CameraTzFull = 30
+		self.CameraTzEnd = 30
+
 
 		# 횡으로 이동하는 모션 값
 		self.CameraLateralBegin = 1
@@ -29,7 +34,7 @@ class AnimationExt:
 		self.CameraLateralEnd = 2.6
 
 		# 화각 (줌)
-		self.CameraFOVBegin = 40
+		self.CameraFOVBegin = 50
 		self.CameraFOVFull = 60
 		self.CameraFOVEnd = 12
 
@@ -40,6 +45,7 @@ class AnimationExt:
 
 		# particle mode update - 파티클 모드 바뀌는 시간
 		self.ParticleModeLength = 15
+		self.SwapLength = 3
 
 
 	def SwapParticleTree(self):
