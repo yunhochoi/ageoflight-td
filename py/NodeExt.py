@@ -8,7 +8,7 @@ class NodeExt:
 		self.ownerComp = ownerComp
 
 		# attributes:
-		self.CameraMotion = False
+		self.CameraMotion = True
 		self.Sculpture = False
 		self.Night = True
 		self.CameraDistance = 0
