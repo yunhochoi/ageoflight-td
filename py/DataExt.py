@@ -63,10 +63,19 @@ class DataExt:
 		jungTotal = kwargs.get('jungTotal', None)
 		posts = kwargs.get('posts', None)
 
+		# clear data table
 		null_color = self.particle.op('base_process/null_color')
 		self.particle.op('base_process/table_jung_0').clear()
 		self.particle.op('base_process/table_jung_1').clear()
 		self.particle.op('base_process/table_jung_total').clear()
+		self.ownerComp.op('table_data').clear()
+
+		# feed data
+		self.ownerComp.op('table_data').appendCols([wind])
+		self.ownerComp.op('table_data').appendCols([danTotal['a']])
+		self.ownerComp.op('table_data').appendCols([danTotal['b']])
+		self.ownerComp.op('table_data').appendCols([danTotal['c']])
+		self.ownerComp.op('table_data').appendCols([danTotal['d']])
 
 		for jung in range(1000):
 
